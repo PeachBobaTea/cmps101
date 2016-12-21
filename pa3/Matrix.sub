@@ -1,0 +1,14 @@
+   Matrix sub(Matrix M){
+      if(this.getSize() != M.getSize()){
+         throw new RuntimeException("Matrix Error: sub() called on matrices of differing size");
+      }
+      Matrix sub = this.copy();
+      for(int i=1; i<=n; i++){
+         if(!(this.row[i].isEmpty()){
+         for(this.row[i].moveFront(); this.row[i].index() >= 0; this.row[i].moveNext()){
+            ((Entry) sub.row[i].get()).value -= ((Entry)M.row[i].get()).value;
+         }
+         }
+      }
+      return sub;
+   }

@@ -1,0 +1,20 @@
+trix add(Matrix M){
+      if(this.getSize() != M.getSize()){
+         throw new RuntimeException("Matrix Error: add() called on matrices of differing size");
+      }
+      Matrix sum = M.copy();
+      for(int i=1; i<=n; i++){
+         for(this.row[i].moveFront(); this.row[i].index() >= 0; this.row[i].moveNext()){
+            // used to contain only this line:((Entry) sum.row[i].get()).value += ((Entry)this.row[i].get()).value;
+            double a = ((Entry)this.row[i].get()).value;
+            for(M.row[i].moveFront();  M.row[i].index() >= 0; M.row[i].moveNext()){
+               if( ((Entry)this.row[i].get()).column == ((Entry)M.row[i].get()).column){
+                  a += ((Entry)M.row[i].get()).value;
+                  break;
+               }
+            sum.changeEntry(i,((Entry)this.row[i].get()).column, a);
+            }
+         }
+      }
+      return sum;
+   }

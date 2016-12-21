@@ -1,0 +1,11 @@
+PA5 written by Richard Selmon
+UCSC ID - rselmon
+files:
+   List.c
+   List.h
+   Graph.c
+   Graph.h
+   FindComponents.c
+   Makefile
+   README
+   GraphTest.c - note: Makefile does not compile this file, i used commandline gcc to compile it.

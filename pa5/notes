@@ -1,0 +1,5 @@
+modify current Graph ADT?
+   -add functions from lab manual that arent already in it.
+   -add #define for UNDEF which will be used for discover and finish times
+
+use list for stack
